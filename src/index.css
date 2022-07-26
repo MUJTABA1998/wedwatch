@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI"),
+    url("https://fonts.cdnfonts.com/s/15051/Segoe UI.woff") format("woff");
+}
+
+.main-container {
+  @apply w-full py-5 px-10 lg:px-20 mx-auto max-w-7xl;
+}
+
+body {
+  @apply font-primary;
+}
