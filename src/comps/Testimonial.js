@@ -31,7 +31,7 @@ const feedback = [
 
 const Testimonial = () => {
   return (
-    <div className="h-auto bg-work py-10">
+    <div className="h-auto bg-work pt-18">
       <div className="main-container">
         <div className="flex flex-col items-center justify-center gap-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
@@ -42,20 +42,20 @@ const Testimonial = () => {
               <h1 className="text-3xl text-secondary font-extrabold font-secondary-font">
                 What Our Couples Say
               </h1>
-              <p className="text-secondary">
+              <p className="text-secondary text-base">
                 We’re really proud of our 100% 5 star reviews on Google.
                 WedMatch is completely free to use, and couples love us, so why
                 not give it a try yourself?
               </p>
             </div>
-            <div className="flex flex-col justify-center items-center gap-5">
-              <h1 className="text-4xl lg:text-8xl font-secondary-font text-gray-300">
+            <div className="flex flex-col justify-items-end items-center gap-1">
+              <h1 className="text-9xl lg:text-8xl font-secondary-font text-gray-300">
                 5.0
               </h1>
               <div>
                 <img src={Stars} alt="stars" />
               </div>
-              <h1 className="text-3xl font-extrabold text-secondary font-secondary-font">
+              <h1 className="text-center text-3xl font-extrabold text-secondary font-secondary-font">
                 Average Couples Rating
               </h1>
             </div>
@@ -63,7 +63,7 @@ const Testimonial = () => {
           <div className="flex flex-col items-center justify-center">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
               {feedback.map((f) => (
-                <div className="flex flex-col justify-center items-start py-24 px-10 gap-5 drop-shadow-2xl bg-white">
+                <div className="flex flex-col justify-center items-start py-16 px-10 gap-5 drop-shadow-2xl bg-white">
                   <div>
                     <img
                       src={Stars}
@@ -71,7 +71,7 @@ const Testimonial = () => {
                       className="w-[100px] object-contain"
                     />
                   </div>
-                  <h3 className="font-medium">{f.comment}</h3>
+                  <h3 className="font-medium text-lg">{f.comment}</h3>
                   <div className="flex justify-around items-center gap-5">
                     <div>
                       {" "}
@@ -92,7 +92,7 @@ const Testimonial = () => {
           </div>
           <Link
             to="#"
-            className="text-white rounded-md px-4 py-3 bg-primary capitalize"
+            className="text-white rounded-md px-4 py-3 mb-5 bg-primary capitalize hover:bg-pr-s transition-all duration-200 ease-in-out"
           >
             Take the free quiz
           </Link>

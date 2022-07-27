@@ -14,16 +14,18 @@ import Footer from "./comps/Footer";
 function App() {
   return (
     <BrowserRouter>
-      <Header />
-      <Brands />
-      <Work />
-      <HowWorks />
-      <Testimonial />
-      <WhyWedMatch />
-      <FindMatch />
-      <Questions />
-      <Photographer />
-      <Footer />
+      <div className="overflow-x-hidden">
+        <Header />
+        <Brands />
+        <Work />
+        <HowWorks />
+        <Testimonial />
+        <WhyWedMatch />
+        <FindMatch />
+        <Questions />
+        <Photographer />
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }

@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <div className="h-auto py-10 bg-footer">
       <div className="main-container">
-        <div className="flex flex-col md:flex-row justify-evenly items-center md:items-start gap-y-10 ">
-          <div>
-            <h1 className="font-secondary-font text-secondary text-center md:text-left">
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-y-10 ">
+          <div className="flex flex-col gap-5 lg:gap-10">
+            <h1 className="font-secondary-font text-secondary leading-[45.5px] text-center text-lg lg:text-[32px] md:text-left">
               The easiest way to find your perfect
               <br /> wedding photographer.
             </h1>

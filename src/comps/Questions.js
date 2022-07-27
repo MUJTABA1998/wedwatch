@@ -11,7 +11,7 @@ const questions = [
   },
   {
     id: 2,
-    question: "What type of photographers can I find on WedMatch?",
+    question: "What type of photographers can I WedMatch?",
     active: false,
     description:
       "Nope! WedMatch is 100% free for couples to use. We make money by charging the wedding photographers a small referral fee when a couple books a photographer they found on WedMatch.",
@@ -72,7 +72,7 @@ const Questions = () => {
                 >
                   {q.question}{" "}
                   <span
-                    className={`absolute right-5 ${
+                    className={`absolute right-5 top-5 ${
                       q.active ? "text-white" : ""
                     }`}
                   >

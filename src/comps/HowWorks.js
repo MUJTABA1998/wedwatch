@@ -32,33 +32,33 @@ const cards = [
 
 const HowWorks = () => {
   return (
-    <div className="py-10 h-auto bg-work">
+    <div className="h-auto bg-work">
       <div className="main-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10  content-center">
-          <div className="text-center relative">
+          <div className="text-center">
             <div className="relative max-w-max mx-auto">
               <img src={Video} alt="video" />
-              <div className="absolute inset-0 m-auto max-w-[100px] sm:max-w-max max-h-max">
+              <div className="absolute inset-0 m-auto max-w-[100px] sm:max-w-max h-fit">
                 <img className="w-full" src={Play} alt="play" />
               </div>
             </div>
             <h5 className="mt-5">Watch the process</h5>
           </div>
           <div className="flex flex-col items-center justify-center gap-y-10">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div className="grid grid-cols-2 gap-10">
               {cards.map((c) => (
-                <div key={c.id} className="flex flex-col items-start">
+                <div key={c.id} className="flex flex-col items-start ">
                   <h1 className="text-gray-300 text-3xl lg:text-6xl font-secondary-font">{`0${c.id}.`}</h1>
-                  <h3 className="text-gray-800 font-extrabold text-xl">
+                  <h3 className="text-gray-800 font-extrabold text-2xl">
                     {c.title}
                   </h3>
-                  <p className="text-gray-400 mt-5">{c.details}</p>
+                  <p className="text-gray-400 text-base mt-5">{c.details}</p>
                 </div>
               ))}
             </div>
             <Link
               to="#"
-              className="text-white rounded-md px-4 py-3 bg-primary capitalize"
+              className="text-white rounded-md px-4 py-3 bg-primary capitalize hover:bg-pr-s transition-all duration-200 ease-in-out"
             >
               take the free quiz
             </Link>
